@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90">
+  <g id="Group_1882" data-name="Group 1882" transform="translate(-755 -686)">
+    <g id="Group_1880" data-name="Group 1880" transform="translate(-131.95 153.961)">
+      <path id="Path_4551" data-name="Path 4551" d="M933.431,548.039h-.269v4.674a5.075,5.075,0,0,1,4.487,4.811v6.323a5.492,5.492,0,0,1-10.921,0v-6.323a5.02,5.02,0,0,1,4.134-4.734v-4.747a10.952,10.952,0,0,0-10.912,10.91v18.174a10.953,10.953,0,0,0,11,10.912h2.483a10.954,10.954,0,0,0,11-10.912V558.953A10.946,10.946,0,0,0,933.431,548.039Z" transform="translate(0)" fill="#fff"/>
+      <path id="Path_4552" data-name="Path 4552" d="M976.011,596.619v4.28a3.341,3.341,0,0,0,6.681,0v-4.28a3.341,3.341,0,0,0-6.681,0Z" transform="translate(-47.157 -38.076)" fill="#fff"/>
+    </g>
+    <g id="Ellipse_99" data-name="Ellipse 99" transform="translate(755 686)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="45" cy="45" r="45" stroke="none"/>
+      <circle cx="45" cy="45" r="44" fill="none"/>
+    </g>
+    <text id="SCROLL" transform="translate(800 757)" fill="#fff" font-size="12" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="-22.644" y="0">SCROLL</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,191 @@
+.u-footer {
+    margin-top: 80px;
+}
+
+.u-footer-top {
+    background-color: #80A6AC;
+    padding: 30px 10%;
+}
+
+.u-footer-logo {
+    font-size: 13px;
+    color: #fff;
+    padding: 0 50px;
+    border-right: solid 1px white;
+}
+
+.u-footer-logo img {
+    width: 100%;
+    max-width: 250px;
+    border-bottom: solid 2px white;
+}
+
+.u-footer-items {
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.u-footer-item {
+    text-decoration: none;
+    color: white;
+}
+
+.u-footer-bottom {
+    padding: 15px 0%;
+    font-size: 13px;
+    color: #118081;
+    text-align: center;
+    background-color: white;
+}
+
+.u-social-item {
+    width: 30px;
+    height: 30px;
+    margin: 0 15px;
+    border: solid 3px #118081;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .u-footer-items {
+        margin: 10px 0;
+        text-align: left;
+        justify-content: start;
+        width: 200px;
+    }
+    .u-footer-logo {
+        padding: 0px;
+        border: none;
+        text-align: center;
+    }
+    .u-social-item {
+        width: 30px;
+        height: 30px;
+        margin: 0px 5px 20px 5px;
+        border: solid 3px #118081;
+        border-radius: 50%;
+    }
+    .u-footer-bottom>div:first-child {
+        padding: 20px;
+        border-bottom: solid 1px #80A6AC;
+    }
+}
+
+
+/*
+The loaders use CSS custom properties (variables) to control the attributes of the loaders
+*/
+
+:root {
+    --loader-width: 70px;
+    --loader-height: 70px;
+    --loader-color-primary: #27ae60;
+    --loader-color-secondary: #eee;
+    --line-width: 3px;
+    --animation-duration: 2s;
+    --loader-initial-scale: 0.1;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+    box-sizing: border-box;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+
+/*
+In order to get optimal results, please only change the 
+variables above and don't change anything in the actual loader code
+*/
+
+
+/*
+    Blasting Ripple Styles
+*/
+
+.u-loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 1100;
+}
+
+
+
+
+/*
+The loaders use CSS custom properties (variables) to control the attributes of the loaders
+*/
+
+:root {
+    --loader-width: 50px;
+    --loader-height: 50px;
+    --loader-color-primary: #27ae60;
+    --loader-color-secondary: #eee;
+    --line-width: 2px;
+    --animation-duration: 2s;
+    --loader-initial-scale: 0.1;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+    box-sizing: border-box;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+
+/*
+In order to get optimal results, please only change the 
+variables above and don't change anything in the actual loader code
+*/
+
+@keyframes recursive-circle {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader.recursive-circle {
+    --loader-offset: calc((var(--loader-width, 100px) / 4) - (var(--line-width, 4px) / 2));
+    height: var(--loader-height, 100px);
+    width: var(--loader-width, 100px);
+    color: var(--loader-color-primary, #33f);
+    display: inline-block;
+    position: relative;
+    border: var(--line-width, 4px) solid;
+    border-radius: 50%;
+    border-top-color: transparent;
+    transform-origin: center center;
+    animation: recursive-circle var(--animation-duration, 1s) linear infinite;
+}
+
+.loader.recursive-circle::after {
+    content: "";
+    height: 50%;
+    width: 50%;
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: var(--loader-offset, 21px);
+    left: var(--loader-offset, 21px);
+    border: var(--line-width, 4px) solid;
+    transform-origin: center center;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: recursive-circle calc(var(--animation-duration, 1s) / 2) linear infinite reverse;
+}

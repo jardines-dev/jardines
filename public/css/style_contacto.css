@@ -1,0 +1,186 @@
+body {
+    background: #EAEBEB!important;
+}
+
+
+/* header css */
+
+.u-navbar-item:last-child>a {
+    color: #327240;
+}
+
+@media only screen and (max-width: 1024px) {
+    .carousel_btn {
+        display: none;
+    }
+}
+
+.u-contact-body {
+    display: flex;
+    padding: 50px 10%;
+}
+
+.u-contact-form {
+    width: 40%;
+}
+
+.u-contact-map {
+    width: 60%;
+}
+
+.u-contact-title {
+    font-size: 30px;
+    color: #118081;
+    padding-left: 20px;
+    border-left: solid 7px #118081;
+}
+
+.u-contact-dexc {
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.u-contact-dexc span {
+    font-weight: bold;
+}
+
+
+/* header css */
+
+.u-contact-form form {
+    width: 80%;
+    padding: 20px 5%;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.u-book-input {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.u-book-input input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #C4C7CB;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.u-book-input div {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.u-book-input input:focus-visible {
+    outline: none;
+}
+
+.u-book-input select {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #C4C7CB;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.u-book-input select:focus-visible {
+    outline: none;
+}
+
+.u-book-input-textarea {
+    width: 96%;
+}
+
+.u-book-input textarea {
+    width: 100%;
+    border: 1px solid #C4C7CB;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.u-book-input textarea:focus-visible {
+    outline: none;
+}
+
+#contact-checkbox-text {
+    font-size: 14px;
+    color: black;
+}
+
+.u-contac-btn,
+.u-contac-map-btn {
+    padding: 0 20px;
+    height: 40px;
+    background-color: #118081;
+    color: #fff;
+    border-radius: 20px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.u-contac-btn {
+    max-width: 200px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .u-contact-form {
+        width: 100%;
+    }
+    .u-contact-map {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .u-contact-form form {
+        width: 90%;
+    }
+    .u-contact-map iframe {
+        display: none;
+    }
+}
+
+.u-border-red {
+    border-color: red!important;
+    color: red!important;
+}
+
+.u-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    z-index: 900;
+    display: none;
+}
+
+.u-alert-main {
+    height: 300px;
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.u-alert-main-title {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    color: grey;
+}
+
+.u-alert-main-btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #118081;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* header css */
